@@ -72,12 +72,12 @@ function validateForm() {
 
     const asunto = document.getElementById('asunto');
     const valorAsunto = asunto.value.trim();
-    const regexM = /^.{10,}$/;
+    const regexAsunto = /^.{10,}$/;
 
     if(valorAsunto == ''){
         isValid = false;
         asunto.classList.add('no-valid');
-    } else if(!regexM.test(valorAsunto)) {
+    } else if(!regexAsunto.test(valorAsunto)) {
         isValid = false;
         asunto.classList.add('no-valid');
     } else {

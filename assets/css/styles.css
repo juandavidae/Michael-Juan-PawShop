@@ -16,7 +16,6 @@
 }
 
 body {
-    
     background-image: 
         linear-gradient(rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.3)), 
         url('../img/fondito.png');
@@ -137,6 +136,20 @@ form input, form textarea {
 form input:focus {
     border-color: var(--primario);
     outline: none;
+}
+
+.no-valid {
+    border-color: #ff6b6b !important;
+    background-color: #ffe0e0 !important;
+}
+
+#mensajes-error {
+    background: #f8d7da;
+    color: #721c24;
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 15px;
+    display: none;
 }
 
 .btn {
